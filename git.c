@@ -48,6 +48,10 @@ static int list_cmds(const char *spec)
 			list_builtins(0, '\n');
 		else if (len == 8 && !strncmp(spec, "parseopt", 8))
 			list_builtins(NO_PARSEOPT, ' ');
+		else if (len == 4 && !strncmp(spec, "main", 4))
+			list_all_main_cmds();
+		else if (len == 6 && !strncmp(spec, "others", 6))
+			list_all_other_cmds();
 		else
 			die(_("unsupported command listing type '%s'"), spec);
 		spec += len;
