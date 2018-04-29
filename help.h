@@ -18,6 +18,7 @@ static inline void mput_char(char c, unsigned int num)
 
 extern void list_common_cmds_help(void);
 extern void list_all_cmds_help(void);
+extern void list_common_guides_help(void);
 extern void list_all_main_cmds(void);
 extern void list_all_other_cmds(void);
 extern void list_cmds_by_category(const char *category);
