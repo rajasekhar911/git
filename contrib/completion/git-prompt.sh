@@ -95,6 +95,12 @@
 # GIT_PS1_HIDE_IF_PWD_IGNORED to a nonempty value. Override this on the
 # repository level by setting bash.hideIfPwdIgnored to "false".
 
+# * indicates that you have unstaged changes
+# % indicates that you have untracked files
+# = indicates that there is no difference between the head and the up-stream.  Also, < would indicate that you are behind, > would indicate that you are ahead and <> would mean that you have diverged
+# + would indicate that you have staged files
+# $ would indicate that you have stashed files
+
 # check whether printf supports -v
 __git_printf_supports_v=
 printf -v __git_printf_supports_v -- '%s' yes >/dev/null 2>&1
